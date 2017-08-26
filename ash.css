@@ -285,3 +285,7 @@ blockquote:before {
 .md-footnote .md-meta {
    color: #6886ba;
 }
+
+.md-content {
+    color: #d9cbbe;
+}
