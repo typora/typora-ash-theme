@@ -215,6 +215,10 @@ blockquote:before {
     -webkit-transition: all 350ms;
 }
 
+#write > blockquote:after {
+    content: no-close-quote;
+}
+
 .task-list-item input{
     width: 1.25rem;
     height: 1.25rem;
@@ -288,4 +292,37 @@ blockquote:before {
 
 .md-content {
     color: #d9cbbe;
+}
+
+.megamenu-content {
+    background: #666;
+}
+
+.megamenu-menu{
+    background-color: var(--side-bar-bg-color);
+}
+
+.megamenu-menu-header {
+    border-bottom: 0;
+}
+
+.megamenu-opened header {
+    background: transparent;
+    background: #666;
+}
+
+#m-import-local:hover .preference-item-hint {
+    color: var(--item-hover-text-color);
+}
+
+.megamenu-menu-panel tbody tr:hover td:nth-child(1) {
+    color: var(--item-hover-text-color);
+}
+
+.megamenu-menu-panel table td:nth-child(1) {
+    color: var(--text-color);
+}
+
+#recent-file-panel {
+    color: var(--blur-text-color);
 }
