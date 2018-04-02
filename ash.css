@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import "night/mermaid.dark.css";
 @import "night/codeblock.dark.css";
 @import "night/sourcemode.dark.css";
 
