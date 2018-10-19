@@ -43,7 +43,7 @@
     --bg-color: #666;
     --code-block-bg-color: #4d4d4d;
     --side-bar-bg-color: #4d4d4d;
-    --window-border: none;
+    --window-border: 1px solid #555;
 
     --active-file-bg-color: #666;
     --active-file-text-color: #fff;
@@ -74,8 +74,9 @@ html, body {
 }
 
 pre,
-pre.md-meta-block {
-    background-color:  #4d4d4d;
+pre.md-meta-block,
+.md-fences {
+    background-color: #4d4d4d;
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -147,8 +148,8 @@ th {
 }
 
 .md-fences .CodeMirror.CodeMirror-wrap {
-    top: -0.8em;
-    margin-bottom: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
  }
 
 .file-list-item-summary {
@@ -326,4 +327,12 @@ blockquote:before {
 
 #recent-file-panel {
     color: var(--blur-text-color);
+}
+
+footer.ty-footer {
+    border-top: 1px solid #555;;
+}
+
+.CodeMirror-gutters {
+    border-right: none;
 }
